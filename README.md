@@ -1,4 +1,5 @@
-**#DBT Project Readme for Snowflake_3.0**
+#DBT Project Readme for Snowflake_3.0
+
 This readme file provides an overview and instructions for the DBT (Data Build Tool) project. DBT is a popular open-source tool used for transforming and modeling data in data warehouses. This project aims to streamline data transformations and facilitate collaboration among data engineers, analysts, and data scientists.
 
 Project Structure
