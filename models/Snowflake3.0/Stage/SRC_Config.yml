@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: Snowflake3.0
+    database: RAW
+    schema: DBT_Source
+    tables:
+      - name: Employee
+        description: Importing employee table as source
