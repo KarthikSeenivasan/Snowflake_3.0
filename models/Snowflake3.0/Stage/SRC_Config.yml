@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: Snowflake3.0
+    description: Snowflake 3.0 is the 3rd times practicesing the dbt. we have used the RAW as databse and  DBT_Source as the shema
+    database: RAW
+    schema: DBT_Source
+    tables:
+      - name: Employee
+        description: Importing employee table as source
+        columns:
+          - name: id
+            description: id is the primary key in the employee table
+            tests:
+              - unique
+              - not_null
+      - name: Address
+        description: Importing address table as source
+        columns:
+          - name: id
+            description: id is the primary key in the address table
+            tests:
+              - unique
+              - not_null
+                  
+                  
+
+models:
+    - name: dim_employees
+      description: dim_employees is the dimenssion model
+      columns:
+        - name: id
+          description: id is the primary key in the dimenssion model
+          tests:
+            - unique
+            - not_null
+                
+                  
